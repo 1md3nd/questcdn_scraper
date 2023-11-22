@@ -18,6 +18,7 @@ def find_task(current_bid,quest_number):
     res['est_value'] = current_bid.find_element(By.XPATH,'//*[@id="current_project"]/div/div[2]/div/table/tbody/tr[3]/td[2]').text
     res['description'] = current_bid.find_element(By.XPATH,'//*[@id="current_project"]/div/div[3]/div/table/tbody/tr[3]/td[2]').text
     res['closing_date'] = current_bid.find_element(By.XPATH,'//*[@id="current_project"]/div/div[2]/div/table/tbody/tr[1]/td[2]').text
+    # The required fields est_value, description, closing_date
     print(res)
 
 def iterate_rows(driver):
